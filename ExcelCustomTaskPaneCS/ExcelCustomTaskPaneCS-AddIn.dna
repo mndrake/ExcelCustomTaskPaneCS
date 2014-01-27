@@ -1,0 +1,20 @@
+<DnaLibrary Name="ExcelCustomTaskPaneCS Add-In" RuntimeVersion="v4.0">
+  <ExternalLibrary Path="ExcelCustomTaskPaneCS.dll" LoadFromBytes="true" Pack="true" />
+
+  <CustomUI>
+    <customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui">
+      <ribbon>
+        <tabs>
+          <tab id='CustomTab' label='Custom Task Pane Test'>
+            <group id='SampleGroup' label='CTP Control'>
+              <button id='Button1' label='Show CTP' size='large' onAction='OnShowCTP' />
+              <button id='Button2' label='Delete CTP' size='large' onAction='OnDeleteCTP' />
+            </group >
+          </tab>
+        </tabs>
+      </ribbon>
+    </customUI>
+  </CustomUI>
+
+</DnaLibrary>
+
